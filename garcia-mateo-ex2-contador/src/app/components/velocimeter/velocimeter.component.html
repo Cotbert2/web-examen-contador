@@ -1,0 +1,19 @@
+<div class="main">
+
+    <div class="velocity-display"
+    [ngClass]="{
+            'low-speed': velocity() < 31,
+            'medium-speed': velocity() >= 31 && velocity() <= 70,
+            'high-speed': velocity() >= 71 && velocity() < 120,
+            'danger-speed': velocity() >= 120
+        }"
+    >
+        <p>{{velocity()}} km/h</p>
+    </div>
+    <div>
+        <button (click)="accelerate()">Acelerate (+) </button>
+        <button (click)="break()">Break (-) </button>
+        <button (click)="reset()"> Reset</button>
+    </div>
+    <p>Velocity range {{range()}}</p>
+</div>

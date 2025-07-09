@@ -1,0 +1,47 @@
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    transition:
+        background 0.3s,
+        color 0.3s,
+        box-shadow 0.3s,
+        transform 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #ff8a00 0%,#e50b5b 100%);
+    color: #fff;
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.main{
+    width: 100%;
+    text-align: center;
+}
+
+.velocity-display{
+    font-size: 10rem;
+    color: #333;
+    margin: 20px 0;
+}
+
+/*SPEED STYLE*/
+.low-speed {
+    color: green;
+    font-weight: bold;
+}
+
+.medium-speed {
+    color: blue;
+    font-weight: bold;
+}
+.high-speed {
+    color: orange;
+    font-weight: bold;
+}
+.danger-speed {
+    color: red;
+    font-weight: bold;
+}
